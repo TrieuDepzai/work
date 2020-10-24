@@ -1,0 +1,273 @@
+.font-pop {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.fonts80 {
+}
+.fontsize-80 {
+    font-size: 40px;
+}
+.fontsize-100 {
+    font-size: 60px;
+}
+body {
+    overflow-x:hidden;
+}
+.t-al-center{
+    text-align: center;
+}
+.container {
+    max-width: 1450px;
+}
+.profile {
+    background-color: gray;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+.list .col-2,.col-9 {
+    padding:0;
+    height: fit-content;
+} 
+.list .col-9 {
+    padding-left: 8px;
+}
+.list p {
+    margin-bottom: 25px;
+}
+.list .col-12 {
+    margin-bottom: 22px;
+}
+.cardme {
+    width:100%;padding:18px 15px;padding-top:30px;padding-bottom:0px;border:1px solid black;border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.btn-switch{
+    display: none;
+}
+#btn-switch{
+    display: none;
+}
+.height-fit {
+    height: 140px !important;
+}
+.mg-130-repo {
+    margin-top: 140px;
+}
+.mg-100-repo {
+    margin-top: 100px;
+}
+@media (max-width:999px) {
+    
+.mg-130-repo {
+    margin-top: 0px;
+}
+.mg-100-repo {
+    margin-top: 0px;
+}
+    .order-repo {
+        order: -5; 
+    }
+    .mg-0 {
+        
+    margin-Top: 22px !important;
+    }
+    .order-repo2 {
+        order: -1; 
+        height: fit-content; 
+    }
+    .order-repo3 {
+        order: -2;
+        height: fit-content; 
+    }
+    .btn-switch{
+        display: block;
+        margin-bottom: 40px;
+    }
+    #btn-switch{
+        display: block;
+    }
+    .cardme {
+        width:100%;padding:18px 15px;padding-top:50px;padding-bottom:10px;border:1px solid black;border-radius: 5px;
+    }
+    .list p {
+        margin-bottom: 75px;
+    }
+}
+.slide {
+    height: 600px;
+    background-color: #80C8E3;
+    background-image: url(./img/111.png);
+    background-size: 100%;
+    background-position-y: center;
+    background-position-x: center;
+    padding: 80px 0px;
+    width: 100vw;
+}
+.slide h4 {
+    font-size: 95px;
+    color:white;
+}
+.slide .input {
+    width:60%;
+    margin-top:80px;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    padding:10px 35px;
+    font-size: 26px;
+    height: fit-content;
+}
+
+.input {
+    margin-top:80px;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    padding:30px 35px;
+    font-size: 26px;
+}
+.br-color1 {
+    background-color: #0F74BB;
+}
+.br-color2 {
+    background-color: #EBEBEB;
+}
+.br-color3 {
+    background-color: #949494;
+}
+.helpmg {
+    margin-bottom: 60px;
+}
+.btn-11 {
+    border-radius: 30px;
+    color:white;
+    padding:5px 50px;
+    font-size: 25px;
+}
+.btn-12 {
+    border-radius: 30px;
+    color:white;
+    padding:5px 80px;
+    font-size: 22px;
+}
+.layer2 {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:#0f74bb;
+    opacity: 0.8;
+}
+/*  */
+.slide2 {
+    margin: 50px 0px;
+}
+/*  */
+.helpfulimg img {
+    width:183px;
+    height:183px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.intro {
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.intro3 {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.intro2 {
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.item-i {
+    margin-bottom: 55px;
+}
+/*  */
+.w-respon {
+    width:75%;
+}
+.w-respon3 {
+    width:40%;
+}
+.mb-display {
+    display:none !important;
+}
+.dt-display {
+    display:block !important;
+}
+.job {
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.mystyle1 {
+    position: absolute;
+    right:0px;
+    top: 13%;
+    cursor: pointer;
+}
+
+.mystyle2 {
+    position: absolute;
+    left:100px;
+    top: 57%;
+    cursor: pointer;
+}
+
+.mystyle3 {
+    position: absolute;
+    right:320px;
+    top: 80%;
+    cursor: pointer;
+}
+@media (max-width:999px) {
+    .mystyle1 {
+        position: static;
+    }
+    .mystyle2 {
+        position: static;
+    }
+    .mystyle3 {
+        position: static;
+    }
+    .main-mg {
+        margin-bottom: 50px;
+    }
+    .dt-display {
+        display:none !important;
+    }
+    .mb-display {
+        display:block !important;
+    }
+    .slide {
+        height:650px;
+    }
+    .slide h4 {
+        font-size: 35px;
+        width:100%;
+    }
+    .slide .input {
+        margin-top:80px;
+        margin-bottom: 12px;
+        border-radius: 30px;
+        padding:12px 28px;
+        width:90%;
+        font-size: 12px;
+        margin-bottom: 100px;
+    }
+    .w-respon {
+        width: 90%;
+    }
+    .w-respon2 {
+        width:90%;
+    }
+}
