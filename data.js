@@ -3,7 +3,7 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399'
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b>";
+document.getElementById(lidEOMvekoell).innerHTML="Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <button onclick='vln()'>on</button>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
 document.getElementById(lidEOMvekoell).style.left = "8px";
 document.getElementById(lidEOMvekoell).style.top = "55px";
@@ -35,6 +35,11 @@ var MYerandom = Math.floor(Math.random() * 60000) + 20000;
 window.setInterval("girmriri()", 162000+MYerandom);
 window.setInterval("eivmeim()", 10000);
 var vlnble = 0;
+
+function vln (){
+	vlnble = 1;
+}
+
 function eivmeim() {
 	if (vlnble == 1) {
 	ERcdvvdvd();
