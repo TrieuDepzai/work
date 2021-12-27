@@ -3,7 +3,7 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399'
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <button onclick='vln()'>on</button>";
+document.getElementById(lidEOMvekoell).innerHTML="Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <p style='cursor:pointer'onclick='vln()'>on</p>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
 document.getElementById(lidEOMvekoell).style.left = "8px";
 document.getElementById(lidEOMvekoell).style.top = "55px";
@@ -190,7 +190,9 @@ function gR () {
 		if (ee.toLowerCase() == 'yes i am') {
 			console.log('YIM');
 			yc+=1;
+			setTimeout(() => {
 			cleick(50, ie);
+			}, 1000);
 			break;
 		}
 	}
@@ -200,7 +202,9 @@ function gR () {
 		if (ee.toLowerCase() == 'yes i am') {
 			console.log('YIM');
 			yc+=1;
-			cleick(document.body.offsetWidth-60, ie);
+			setTimeout(() => {
+				cleick(document.body.offsetWidth-60, ie);
+			}, 1000);
 			break;
 		}
 	}
