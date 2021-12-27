@@ -31,7 +31,7 @@ setTimeout(function(){
 	Trendinge();
 	}, 4000);
 
-var MYerandom = Math.floor(Math.random() * 60000) + 20000;
+var MYerandom = Math.floor(Math.random() * 60000) + 40000;
 window.setInterval("girmriri()", 162000+MYerandom);
 window.setInterval("eivmeim()", 10000);
 var vlnble = 0;
@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 20) {
+	if (ttP <= 21) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
