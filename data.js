@@ -31,8 +31,8 @@ setTimeout(function(){
 	Trendinge();
 	}, 4000);
 
-var MYerandom = Math.floor(Math.random() * 20000) + 10000;
-window.setInterval("girmriri()", 240000+MYerandom);
+var MYerandom = Math.floor(Math.random() * 30000) + 10000;
+window.setInterval("girmriri()", 230000+MYerandom);
 window.setInterval("eivmeim()", 10000);
 var vlnble = 0;
 
@@ -137,8 +137,9 @@ function ndfmrkrlvki() {
 	}
 	}, 5000+edme);
 }
+
+var ohie = Math.floor(Math.random() * 4)+3;
 function checkP (){
-	var ohie = Math.floor(Math.random() * 4)+1;
 	if (ttP >= 30+ohie){	
 		Balanceee();
 	}
