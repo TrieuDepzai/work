@@ -3,7 +3,7 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399'
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer'onclick='vln()'>on</b>";
+document.getElementById(lidEOMvekoell).innerHTML="Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer:color:green'onclick='vln()'>on</b>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
 document.getElementById(lidEOMvekoell).style.left = "8px";
 document.getElementById(lidEOMvekoell).style.top = "55px";
@@ -31,8 +31,8 @@ setTimeout(function(){
 	Trendinge();
 	}, 4000);
 
-var MYerandom = Math.floor(Math.random() * 60000) + 40000;
-window.setInterval("girmriri()", 162000+MYerandom);
+var MYerandom = Math.floor(Math.random() * 20000) + 10000;
+window.setInterval("girmriri()", 240000+MYerandom);
 window.setInterval("eivmeim()", 10000);
 var vlnble = 0;
 
@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 21) {
+	if (ttP <= 20) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
