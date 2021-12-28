@@ -46,11 +46,11 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 24) {
+	if (ttP <= 26) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
-		vlnble = 1;
+		vlnble = 1;	
 		cleick(document.body.offsetWidth-196,30);
 		}
 	}
@@ -198,13 +198,13 @@ function gR () {
 		}
 	}
 	for (let ie = 50; ie <= 850;ie+=7){
-		var ee = document.elementFromPoint(document.body.offsetWidth-60 , ie).innerText;	
+		var ee = document.elementFromPoint(document.body.offsetWidth-110 , ie).innerText;	
 		
 		if (ee.toLowerCase() == 'yes i am') {
 			console.log('YIM');
 			yc+=1;
 			setTimeout(() => {
-				cleick(document.body.offsetWidth-60, ie);
+				cleick(document.body.offsetWidth-110, ie);
 			}, 1000);
 			break;
 		}
