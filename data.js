@@ -31,9 +31,9 @@ setTimeout(function(){
 	Trendinge();
 	}, 4000);
 
-var MYerandom = Math.floor(Math.random() * 10000) + 10000;
-window.setInterval("girmriri()", 160000+MYerandom);
-window.setInterval("eivmeim()", 10000);
+var MYerandeom = Math.floor(Math.random() * 10000) + 10000;
+window.setInterval("girmriri()", 165000+MYerandeom);
+window.setInterval("eivmeim()", 12000);
 var vlnble = 0;
 
 function vln (){
@@ -214,7 +214,7 @@ function gR () {
 }
 
 //// server
-var arr;
+/* var arr;
 function getData(a){
 	arr =a;
 }
@@ -234,7 +234,7 @@ function CClaim () {
 					cleick(450,270);
 				}, 3500);
 			}
-}
+} */
 
 
 
