@@ -77,21 +77,18 @@ function ERcdvvdvd() {
 	if (rkcjnv  == 3) {
 		nne = 'Unrelated';data = 1050;
 	}
-	var teet = false;
 	for (let i = 350 ; i <= 700; i+=7){
 		var e = document.elementFromPoint(data , i).innerHTML;	
 		if (e == nne) {
-			teet = true;
 			console.log(e);
 			setTimeout(function(){
-				checkP();
-			cleick(data,i);
-			},1500);
+				if (e== nne) {
+					checkP();
+					cleick(data,i);
+				}
+			},2500);
 			break;
 		}
-	}
-	if (teet == false) {
-		girmriri();
 	}
 	console.log(teet);
 	}, 12000+edme);
