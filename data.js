@@ -33,7 +33,6 @@ setTimeout(function(){
 
 var MYerandeom = Math.floor(Math.random() * 10000) + 10000;
 window.setInterval("girmriri()", 165000+MYerandeom);
-window.setInterval("eivmeim()", 12000);
 var vlnble = 0;
 
 function vln (){
@@ -46,12 +45,13 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 26) {
+	if (ttP <= 24) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
 		vlnble = 1;	
 		cleick(document.body.offsetWidth-196,30);
+		window.setInterval("eivmeim()", 15000);
 		}
 	}
 }
