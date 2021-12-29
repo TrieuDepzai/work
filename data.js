@@ -127,8 +127,12 @@ function ndfmrkrlvki() {
 		var ee = document.elementFromPoint(data , ie).innerText;	
 		if (ee == nne) {
 			
-			checkP();
-			cleick(data, ie);
+			setTimeout(() => {
+				if (ee == nne) {
+					checkP();
+					cleick(data, ie);
+				}
+			}, 2500);
 			break;
 		}
 	}
