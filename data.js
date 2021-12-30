@@ -12,7 +12,7 @@ document.getElementById(lidEOMvekoell).style.padding = "5px";
 document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 
 var yc = 0;
-
+var ARK = ['opinion','real','disable','point','question','reading'];
 function Trendinge(){
 	for (let i = 100 ; i <= 700; i+=7){
 		var e = document.elementFromPoint(70 , i).innerHTML;	
@@ -39,7 +39,7 @@ function vln (){
 	ttP = 24;
 	girmriri();
 }
-
+var pee = false;
 function eivmeim() {
 	if (vlnble == 1) {
 	ERcdvvdvd();
@@ -78,14 +78,23 @@ function ERcdvvdvd() {
 	if (rkcjnv  == 3) {
 		nne = 'Unrelated';data = 1050;
 	}
+	mCh = true;
 	for (let i = 350 ; i <= 700; i+=7){
 		var e = document.elementFromPoint(data , i).innerHTML;	
 		if (e == nne) {
 			console.log(e);
 			setTimeout(function(){
 				if (e== nne) {
-					checkP();
-					cleick(data,i);
+					for (let arel = 0; arel <= ARK.length; arel+=1){
+						if (cData.indexOf(ARK[arel]) > -1) {
+							console.log('HM');
+							mCh = false;
+						} 
+					}
+					if (mCh == true) {
+						checkP();
+						cleick(data, ie);
+					}
 				}
 			},2500);
 			break;
@@ -95,8 +104,9 @@ function ERcdvvdvd() {
 	}, 12000+edme);
 }
 
-
+var cData = '';
 function ndfmrkrlvki() {
+	cData = '';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
 	for (let i = 1000 ; i >= 800; i-=7){
 		var e = document.elementFromPoint(i , 152).innerHTML;	
@@ -124,14 +134,24 @@ function ndfmrkrlvki() {
 	if (rkcjnv  == 3) {
 		nne = 'Unrelated';data = 661;
 	}
+	var mCh = true;
 	for (let ie = 200; ie <= 850;ie+=7){
-		var ee = document.elementFromPoint(data , ie).innerText;	
+		var ee = document.elementFromPoint(data , ie).innerText;
+		cData += ee;	
 		if (ee == nne) {
-			
+			cData.toLowerCase();
 			setTimeout(() => {
 				if (ee == nne) {
-					checkP();
-					cleick(data, ie);
+					for (let arel = 0; arel <= ARK.length; arel+=1){
+						if (cData.indexOf(ARK[arel]) > -1) {
+							console.log('HM');
+							mCh = false;
+						} 
+					}
+					if (mCh == true) {
+						checkP();
+						cleick(data, ie);
+					}
 				}
 			}, 2500);
 			break;
