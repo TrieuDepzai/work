@@ -57,7 +57,9 @@ function girmriri(){
 	}
 }
 
+var cData = '';
 function ERcdvvdvd() {
+	cData = '';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
 	cleick(document.body.offsetWidth-40+RIOVrndoek , 92+RIOVrndoek );
 
@@ -104,7 +106,6 @@ function ERcdvvdvd() {
 	}, 12000+edme);
 }
 
-var cData = '';
 function ndfmrkrlvki() {
 	cData = '';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
