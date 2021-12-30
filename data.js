@@ -36,7 +36,8 @@ window.setInterval("girmriri()", 165000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
-	vlnble = 1;
+	ttP = 25;
+	girmriri();
 }
 
 function eivmeim() {
