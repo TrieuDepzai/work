@@ -36,7 +36,7 @@ window.setInterval("girmriri()", 165000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
-	ttP = 25;
+	ttP = 24;
 	girmriri();
 }
 
@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 24) {
+	if (ttP <= 23) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
@@ -140,7 +140,7 @@ function ndfmrkrlvki() {
 	}, 5000+edme);
 }
 
-var ohie = Math.floor(Math.random() * 4)+3;
+var ohie = Math.floor(Math.random() * 4)+4;
 function checkP (){
 	if (ttP >= 30+ohie){	
 		Balanceee();
