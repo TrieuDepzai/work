@@ -88,7 +88,7 @@ function ERcdvvdvd() {
 			setTimeout(function(){
 				if (e== nne) {
 					for (let arel = 0; arel <= ARK.length; arel+=1){
-						if (cData.indexOf(ARK[arel]) > -1) {
+						if (cData.toLowerCase().indexOf(ARK[arel].toLowerCase()) > -1) {
 							console.log('HM');
 							mCh = false;
 						} 
@@ -144,7 +144,7 @@ function ndfmrkrlvki() {
 			setTimeout(() => {
 				if (ee == nne) {
 					for (let arel = 0; arel <= ARK.length; arel+=1){
-						if (cData.indexOf(ARK[arel]) > -1) {
+						if (cData.toLowerCase().indexOf(ARK[arel]) > -1) {
 							console.log('HM');
 							mCh = false;
 						} 
