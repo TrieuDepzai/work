@@ -12,7 +12,7 @@ document.getElementById(lidEOMvekoell).style.padding = "5px";
 document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 
 var yc = 0;
-var ARK = ['opinion','real','disable','point','question','reading'];
+var ARK = ['real','disable','point','question','reading','important'];
 function Trendinge(){
 	for (let i = 100 ; i <= 700; i+=7){
 		var e = document.elementFromPoint(70 , i).innerHTML;	
@@ -57,9 +57,7 @@ function girmriri(){
 	}
 }
 
-var cData = '';
 function ERcdvvdvd() {
-	cData = '';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
 	cleick(document.body.offsetWidth-40+RIOVrndoek , 92+RIOVrndoek );
 
@@ -88,7 +86,7 @@ function ERcdvvdvd() {
 			setTimeout(function(){
 				if (e== nne) {
 					for (let arel = 0; arel <= ARK.length; arel+=1){
-						if (cData.toLowerCase().indexOf(ARK[arel].toLowerCase()) > -1) {
+						if (document.elementFromPoint(data , i).innerText.toLowerCase().indexOf(ARK[arel].toLowerCase()) > -1) {
 							console.log('HM');
 							mCh = false;
 						} 
@@ -107,7 +105,6 @@ function ERcdvvdvd() {
 }
 
 function ndfmrkrlvki() {
-	cData = '';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
 	for (let i = 1000 ; i >= 800; i-=7){
 		var e = document.elementFromPoint(i , 152).innerHTML;	
@@ -144,7 +141,7 @@ function ndfmrkrlvki() {
 			setTimeout(() => {
 				if (ee == nne) {
 					for (let arel = 0; arel <= ARK.length; arel+=1){
-						if (cData.toLowerCase().indexOf(ARK[arel]) > -1) {
+						if (document.elementFromPoint(data , i).innerText.toLowerCase().indexOf(ARK[arel].toLowerCase()) > -1) {
 							console.log('HM');
 							mCh = false;
 						} 
