@@ -32,11 +32,11 @@ setTimeout(function(){
 	}, 4000);
 
 var MYerandeom = Math.floor(Math.random() * 10000) + 10000;
-window.setInterval("girmriri()", 165000+MYerandeom);
+window.setInterval("girmriri()", 180000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
-	ttP = 24;
+	ttP = 25;
 	girmriri();
 }
 var pee = false;
@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 23) {
+	if (ttP <= 25) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
@@ -80,8 +80,8 @@ function ERcdvvdvd() {
 		nne = 'Unrelated';data = 1050;
 	}
 	mCh = true;
-	for (let i = 350 ; i <= 700; i+=7){
-		var e = document.elementFromPoint(data , i).innerHTML;	
+	for (let i = 200 ; i <= 850; i+=7){
+		var e = document.elementFromPoint(data , i).innerText;	
 		cData += e.toLowerCase();
 		if (e == nne) {
 			console.log(e);
