@@ -82,13 +82,13 @@ function ERcdvvdvd() {
 	mCh = true;
 	for (let i = 350 ; i <= 700; i+=7){
 		var e = document.elementFromPoint(data , i).innerHTML;	
-		cData += e;
+		cData += e.toLowerCase();
 		if (e == nne) {
 			console.log(e);
 			setTimeout(function(){
 				if (e== nne) {
 					for (let arel = 0; arel <= ARK.length; arel+=1){
-						if (cData.toLowerCase().indexOf(ARK[arel].toLowerCase()) > -1) {
+						if (cData.indexOf(ARK[arel].toLowerCase()) > -1) {
 							console.log('HM');
 							mCh = false;
 						} 
@@ -138,13 +138,13 @@ function ndfmrkrlvki() {
 	var mCh = true;
 	for (let ie = 200; ie <= 850;ie+=7){
 		var ee = document.elementFromPoint(data , ie).innerText;
-		cData += ee;	
+		cData += ee.toLowerCase();	
 		if (ee == nne) {
 			cData.toLowerCase();
 			setTimeout(() => {
 				if (ee == nne) {
 					for (let arel = 0; arel <= ARK.length; arel+=1){
-						if (cData.toLowerCase().indexOf(ARK[arel].toLowerCase()) > -1) {
+						if (cData.indexOf(ARK[arel].toLowerCase()) > -1) {
 							console.log('HM');
 							mCh = false;
 						} 
