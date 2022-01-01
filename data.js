@@ -36,7 +36,7 @@ window.setInterval("girmriri()", 180000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
-	ttP = 25;
+	ttP = 22;
 	girmriri();
 }
 var pee = false;
@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 25) {
+	if (ttP <= 22) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
