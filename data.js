@@ -98,7 +98,7 @@ function ERcdvvdvd() {
 						checkP();
 					}
 				}
-			},3500);
+			},5000);
 			break;
 		}
 	}
