@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 22) {
+	if (ttP <= 21) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
