@@ -94,8 +94,8 @@ function ERcdvvdvd() {
 						} 
 					}
 					if (mCh == true) {
-						checkP();
 						cleick(data, ie);
+						checkP();
 					}
 				}
 			},2500);
@@ -103,7 +103,7 @@ function ERcdvvdvd() {
 		}
 	}
 	console.log(teet);
-	}, 12000+edme);
+	}, 14000+edme);
 }
 
 function ndfmrkrlvki() {
@@ -150,8 +150,8 @@ function ndfmrkrlvki() {
 						} 
 					}
 					if (mCh == true) {
-						checkP();
 						cleick(data, ie);
+						checkP();
 					}
 				}
 			}, 2500);
