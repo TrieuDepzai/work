@@ -94,7 +94,7 @@ function ERcdvvdvd() {
 						} 
 					}
 					if (mCh == true) {
-						cleick(data, ie);
+						cleick(data, i);
 						checkP();
 					}
 				}
