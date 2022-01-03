@@ -32,7 +32,7 @@ setTimeout(function(){
 	}, 4000);
 
 var MYerandeom = Math.floor(Math.random() * 10000) + 10000;
-window.setInterval("girmriri()", 180000+MYerandeom);
+window.setInterval("girmriri()", 200000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
