@@ -3,7 +3,7 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399'
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="ID: <br>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b>";
+document.getElementById(lidEOMvekoell).innerHTML="ID: <b id='omID'>0</b><br>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
 document.getElementById(lidEOMvekoell).style.left = "8px";
 document.getElementById(lidEOMvekoell).style.top = "55px";
