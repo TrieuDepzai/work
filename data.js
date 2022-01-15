@@ -3,10 +3,10 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399'
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="ID: <b id='omID'>0</b><br>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b>";
+document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:10px'>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b></div>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
-document.getElementById(lidEOMvekoell).style.left = "8px";
-document.getElementById(lidEOMvekoell).style.top = "55px";
+document.getElementById(lidEOMvekoell).style.left = "0px";
+document.getElementById(lidEOMvekoell).style.top = "0px";
 document.getElementById(lidEOMvekoell).style.color = "black";
 document.getElementById(lidEOMvekoell).style.padding = "5px";
 document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
@@ -36,7 +36,7 @@ window.setInterval("girmriri()", 200000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
-	ttP = 22;
+	ttP = 24;
 	girmriri();
 }
 var pee = false;
@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 21) {
+	if (ttP <= 23) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
@@ -233,7 +233,9 @@ function gR () {
 		}
 	}
 	
-	document.getElementById('yc').innerText= yc;
+	setTimeout(() => {
+		document.getElementById('yc').innerText= yc;
+	}, 1500);
 }
 
 //// server
