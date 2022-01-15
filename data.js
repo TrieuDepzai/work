@@ -60,8 +60,6 @@ cData = '';
 cO = 1;
 function ERcdvvdvd() {
 	cData = '';
-	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
-	cleick(document.body.offsetWidth-40+RIOVrndoek , 92+RIOVrndoek );
 	if (cO == 1) {
 		cleick(400, 300);
 		cO == 0;
