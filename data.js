@@ -1,6 +1,6 @@
 
 var ved = document.createElement('div');
-var lidEOMvekoell = 'NveuifjRRR399'
+var lidEOMvekoell = 'NveuifjRRR399';
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
 document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:16px'>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b></div>";
@@ -11,15 +11,17 @@ document.getElementById(lidEOMvekoell).style.color = "black";
 document.getElementById(lidEOMvekoell).style.padding = "5px";
 document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
 
-if(window.stop !== undefined)
-{
-     window.stop();
-}
-else if(document.execCommand !== undefined)
-{
-     document.execCommand("Stop", false);
-}
+$(document).ready(function () {
+	var images = $('img');
+	$.each(images, function() {
+	  $(this).removeAttr("src");
+	});
+  });
 
 var yc = 0;
 var ARK = ['real','disable','point','question','reading','important'];
