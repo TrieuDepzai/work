@@ -3,7 +3,7 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399'
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:12px'>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b></div>";
+document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:16px'>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b></div>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
 document.getElementById(lidEOMvekoell).style.left = "0px";
 document.getElementById(lidEOMvekoell).style.top = "0px";
@@ -36,7 +36,7 @@ window.setInterval("girmriri()", 200000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
-	ttP = 24;
+	ttP = 22;
 	girmriri();
 }
 var pee = false;
@@ -46,7 +46,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 23) {
+	if (ttP <= 21) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
@@ -57,11 +57,18 @@ function girmriri(){
 	}
 }
 cData = '';
+cO = 1;
 function ERcdvvdvd() {
 	cData = '';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
 	cleick(document.body.offsetWidth-40+RIOVrndoek , 92+RIOVrndoek );
-
+	if (cO == 1) {
+		cleick(400, 300);
+		cO == 0;
+	} else {
+		cleick(200, 600);
+		cO == 1;
+	}
 	var edme = Math.floor(Math.random() * 5000)+1;
 	setTimeout(function(){ 
 	var rkcjnv = Math.floor(Math.random() * 4)+1;
