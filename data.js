@@ -15,8 +15,7 @@ var yc = 0;
 var ARK = ['real','disable','point','question','reading','important'];
 function Trendinge(){
 	for (let i = 100 ; i <= 700; i+=7){
-		var e = document.elementFromPoint(70 , i).innerHTML;	
-		console.log(i);
+		var e = document.elementFromPoint(70 , i).innerHTML;
 		if (e == 'Trending news') {
 			teet = true;
 			cleick(70,i+100);
@@ -58,6 +57,7 @@ function girmriri(){
 }
 cData = '';
 cO = 1;
+/// R
 function ERcdvvdvd() {
 	cData = '';
 	if (cO == 1) {
@@ -89,7 +89,6 @@ function ERcdvvdvd() {
 		var e = document.elementFromPoint(data , i).innerText;	
 		cData += e.toLowerCase();
 		if (e == nne) {
-			console.log(e);
 			setTimeout(function(){
 				if (e== nne) {
 					for (let arel = 0; arel <= ARK.length; arel+=1){
@@ -108,15 +107,14 @@ function ERcdvvdvd() {
 		}
 	}
 	console.log(teet);
-	}, 14000+edme);
+	}, 6000+edme);
 }
-
+/// P
 function ndfmrkrlvki() {
 	cData ='';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
 	for (let i = 1000 ; i >= 800; i-=7){
 		var e = document.elementFromPoint(i , 152).innerHTML;	
-		console.log(i);
 		if (e == '') {
 			cleick(i , 152);
 			break;
@@ -166,7 +164,7 @@ function ndfmrkrlvki() {
 	}, 5000+edme);
 }
 
-var ohie = Math.floor(Math.random() * 4)+4;
+var ohie = Math.floor(Math.random() * 4)+5;
 function checkP (){
 	if (ttP >= 30+ohie){	
 		Balanceee();
