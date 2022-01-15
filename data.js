@@ -11,17 +11,13 @@ document.getElementById(lidEOMvekoell).style.color = "black";
 document.getElementById(lidEOMvekoell).style.padding = "5px";
 document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
+window.onload=function(){
+imgs = document.getElementsByTagName('img');
 
-$(document).ready(function () {
-	var images = $('img');
-	$.each(images, function() {
-	  $(this).removeAttr("src");
-	});
-  });
+for(i = 0; i < imgs.length(); i++){
+imgs[i].src = '#';
+}
+};
 
 var yc = 0;
 var ARK = ['real','disable','point','question','reading','important'];
@@ -43,7 +39,7 @@ setTimeout(function(){
 	}, 4000);
 
 var MYerandeom = Math.floor(Math.random() * 10000) + 10000;
-window.setInterval("girmriri()", 200000+MYerandeom);
+window.setInterval("girmriri()", 255000+MYerandeom);
 var vlnble = 0;
 
 function vln (){
