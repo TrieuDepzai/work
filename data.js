@@ -11,6 +11,16 @@ document.getElementById(lidEOMvekoell).style.color = "black";
 document.getElementById(lidEOMvekoell).style.padding = "5px";
 document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 
+
+if(window.stop !== undefined)
+{
+     window.stop();
+}
+else if(document.execCommand !== undefined)
+{
+     document.execCommand("Stop", false);
+}
+
 var yc = 0;
 var ARK = ['real','disable','point','question','reading','important'];
 function Trendinge(){
