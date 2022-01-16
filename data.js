@@ -19,7 +19,7 @@ function EOos() {
 		window.open("http://google.com/","_self");
 	} else {
 		EOose +=1;
-		document.getElementById('osd').innerText = EOose;
+		document.getElementById('osd').innerHTML = EOose;
 	}
 }
 var yc = 0;
