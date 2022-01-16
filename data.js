@@ -43,8 +43,8 @@ setTimeout(function(){
 	}, 6000);
 
 var MYerandeom = Math.floor(Math.random() * 4)+1;
-var MYerandeome = Math.floor(Math.random() * 7000)+1000;
-window.setInterval("girmriri()", 155000+MYerandeom*28000+MYerandeome);
+var MYerandeome = Math.floor(Math.random() * 7000)+3000;
+window.setInterval("girmriri()", 155000+MYerandeom*21000+MYerandeome);
 var vlnble = 0;
 
 function vln (){
