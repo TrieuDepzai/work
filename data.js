@@ -3,7 +3,7 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399';
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:16px'>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b></div>";
+document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:16px'>os: <b id='osd'></b><br>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b></div>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
 document.getElementById(lidEOMvekoell).style.left = "0px";
 document.getElementById(lidEOMvekoell).style.top = "0px";
@@ -11,17 +11,21 @@ document.getElementById(lidEOMvekoell).style.color = "black";
 document.getElementById(lidEOMvekoell).style.padding = "5px";
 document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 
-window.onload=function(){
-imgs = document.getElementsByTagName('img');
-
-for(i = 0; i < imgs.length(); i++){
-imgs[i].src = '#';
+window.setInterval("EOos()", 60000);
+var EOose = 0;
+var EOosc= Math.floor(Math.random() * 3.5) + 1;
+function EOos() {
+	if (EOose >= 94+2*EOosc) {
+		window.open("http://google.com/","_self");
+	} else {
+		EOose +=1;
+		document.getElementById('osd') = EOose;
+	}
 }
-};
-
 var yc = 0;
 var ARK = ['real','disable','point','question','reading','important'];
 function Trendinge(){
+	var tred = Math.floor(Math.random() * 8000) + 1500;
 	for (let i = 100 ; i <= 700; i+=7){
 		var e = document.elementFromPoint(70 , i).innerHTML;
 		if (e == 'Trending news') {
@@ -29,17 +33,18 @@ function Trendinge(){
 			cleick(70,i+100);
 			setTimeout(function(){
 				girmriri();
-			},3000);
+			},7000+tred);
 			break;
 		}
 	}
 }
 setTimeout(function(){ 
 	Trendinge();
-	}, 4000);
+	}, 6000);
 
-var MYerandeom = Math.floor(Math.random() * 10000) + 10000;
-window.setInterval("girmriri()", 255000+MYerandeom);
+var MYerandeom = Math.floor(Math.random() * 4)+1;
+var MYerandeome = Math.floor(Math.random() * 7000)+1000;
+window.setInterval("girmriri()", 155000+MYerandeom*28000+MYerandeome);
 var vlnble = 0;
 
 function vln (){
@@ -53,7 +58,7 @@ function eivmeim() {
 	}
 }
 function girmriri(){
-	if (ttP <= 21) {
+	if (ttP <= 30) {
 		ndfmrkrlvki();
 	} else {
 		if (vlnble == 0) {
@@ -144,7 +149,7 @@ function ndfmrkrlvki() {
 		}
 	}
 
-	var edme = Math.floor(Math.random() * 4000)+1;
+	var edme = Math.floor(Math.random() * 6000)+1000;
 	setTimeout(function(){ 
 	var rkcjnv = Math.floor(Math.random() * 4)+1;
 	var nne = '';
@@ -184,7 +189,7 @@ function ndfmrkrlvki() {
 			break;
 		}
 	}
-	}, 5000+edme);
+	}, 6500+edme);
 }
 
 var ohie = Math.floor(Math.random() * 4)+6;
@@ -196,22 +201,6 @@ function checkP (){
 	document.getElementById('ct').innerText= ttP;
 }
 function Balanceee(){
-		cleick(500,33);
-		var elee = document.elementFromPoint(390, 227).innerText;
-			var Po = document.elementFromPoint(480, 33).innerText;
-		setTimeout(() => {
-			elee = document.elementFromPoint(390, 227).innerText;
-			Po = document.elementFromPoint(480, 33).innerText;
-		}, 3000);
-			setTimeout(function(){ 
-				window.open("http://127.0.0.1:801/lnwork/?po="+Po+"&value="+elee+"&id="+eid,"_self");
-				}, 20000);
-
-
-				//C
-			setTimeout(() => {
-				checkSV();
-			}, 5000);
 }
 function cleick(x, y)
 {
@@ -264,40 +253,6 @@ function gR () {
 	}, 1500);
 }
 
-//// server
-/* var arr;
-function getData(a){
-	arr =a;
-}
-
-function checkSV() {
-	fetch('http://127.0.0.1:801/lnwork/get.php?id='+eid)
-	.then(response => response.json())
-	.then(data => getData(data));
-	CClaim();
-}
-function CClaim () {
-			if (arr[0]['claim'] == 1) {
-				cleick(500,33);
-				setTimeout(() => {
-					fetch('http://127.0.0.1:801/lnwork/set.php?claim=0&id='+eid)
-				.then(response => response.json())
-					cleick(450,270);
-				}, 3500);
-			}
-} */
 
 
 
-
-
-
-
-
-
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'r')
-      Balanceee();
-    if (e.key === 't')
-      vlnble = 1;
-  })
