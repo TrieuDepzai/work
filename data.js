@@ -16,7 +16,7 @@ var EOose = 0;
 var EOosc= Math.floor(Math.random() * 3.5) + 1;
 function EOos() {
 	if (EOose >= 94+2*EOosc) {
-		window.open("http://google.com/","_self");
+		// window.open("http://google.com/","_self");
 	} else {
 		EOose +=1;
 		document.getElementById('osd').innerHTML = EOose;
