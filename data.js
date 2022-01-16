@@ -110,7 +110,7 @@ function ERcdvvdvd() {
 						checkP();
 					}
 				}
-			},5000);
+			},3000);
 			break;
 		}
 	}
@@ -172,7 +172,7 @@ function ndfmrkrlvki() {
 	}, 5000+edme);
 }
 
-var ohie = Math.floor(Math.random() * 4)+5;
+var ohie = Math.floor(Math.random() * 4)+6;
 function checkP (){
 	if (ttP >= 30+ohie){	
 		Balanceee();
