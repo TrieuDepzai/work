@@ -106,8 +106,23 @@ function ERcdvvdvd() {
 						} 
 					}
 					if (mCh == true) {
-						cleick(data, i);
-						checkP();
+						var trl = false;
+						if (data == 1050 && document.elementFromPoint(888, i).innerText == 'Bearish') {
+							trl = true;
+						}
+						if (data == 888 && document.elementFromPoint(1050, i).innerText == 'Unrelated') {
+							trl = true;
+						}
+						if (data == 777 && document.elementFromPoint(666, i).innerText == 'Bullish') {
+							trl = true;
+						}
+						if (data == 666 && document.elementFromPoint(777, i).innerText == 'Neutral') {
+							trl = true;
+						}
+						if (trl == true) {
+							cleick(data, i);
+							checkP();
+						}
 					}
 				}
 			},3000);
