@@ -70,10 +70,10 @@ function ERcdvvdvd() {
 	cData = '';
 	if (cO == 1) {
 		cleick(400, 300);
-		cO == 0;
+		cO = 0;
 	} else {
 		cleick(200, 600);
-		cO == 1;
+		cO = 1;
 	}
 	var edme = Math.floor(Math.random() * 5000)+1;
 	setTimeout(function(){ 
