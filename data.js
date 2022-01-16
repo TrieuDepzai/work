@@ -64,17 +64,17 @@ function girmriri(){
 	}
 }
 cData = '';
-cO = 1;
+cO = true;
 /// R
 function ERcdvvdvd() {
 	cData = '';
-	if (cO == 1) {
+	if (cO == true) {
+		cleick(200, 555);
+		cO = false;
+	} else if (cO == false) {
 		cleick(400, 300);
-		cO = 0;
-	} else {
-		cleick(200, 600);
-		cO = 1;
-	}
+		cO = true;
+	} 
 	var edme = Math.floor(Math.random() * 5000)+1;
 	setTimeout(function(){ 
 	var rkcjnv = Math.floor(Math.random() * 4)+1;
