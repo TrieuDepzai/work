@@ -115,7 +115,7 @@ function ERcdvvdvd() {
 		}
 	}
 	console.log(teet);
-	}, 6000+edme);
+	}, 11000+edme);
 }
 /// P
 function ndfmrkrlvki() {
