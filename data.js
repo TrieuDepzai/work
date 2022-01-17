@@ -14,9 +14,14 @@ document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 window.setInterval("EOos()", 60000);
 var EOose = 0;
 var EOosc= Math.floor(Math.random() * 3.5) + 1;
+var EOt = 0;
 function EOos() {
 	if (EOose >= 94+2*EOosc) {
 		// window.open("http://google.com/","_self");
+		if (EOt == 0) {
+			cleick(550,30);
+			EOt = 1;
+		}
 	} else {
 		EOose +=1;
 		document.getElementById('osd').innerHTML = EOose;
