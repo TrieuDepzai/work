@@ -3,7 +3,7 @@ var ved = document.createElement('div');
 var lidEOMvekoell = 'NveuifjRRR399';
 ved.id = lidEOMvekoell;
 document.body.appendChild(ved);
-document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:16px'>os: <b id='osd'>0</b><br>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b><br>Read: <b style='cursor:pointer;color:green'onclick='vln()'>on</b></div>";
+document.getElementById(lidEOMvekoell).innerHTML="<div style='font-size:16px'>os: <b id='osd'>0</b><br>Total time: <b id ='ct'>0</b> <br> Total YIM: <b id='yc'>0</b></div>";
 document.getElementById(lidEOMvekoell).style.position = "absolute";
 document.getElementById(lidEOMvekoell).style.left = "0px";
 document.getElementById(lidEOMvekoell).style.top = "0px";
@@ -13,10 +13,11 @@ document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 
 window.setInterval("EOos()", 60000);
 var EOose = 0;
-var EOosc= Math.floor(Math.random() * 3.5) + 1;
+var EOosc= Math.floor(Math.random() * 4) + 1;
+var eSult= 91+2*EOosc;
 var EOt = 0;
 function EOos() {
-	if (EOose >= 94+2*EOosc) {
+	if (EOose >= eSult) {
 		// window.open("http://google.com/","_self");
 		if (EOt == 0) {
 			cleick(550,30);
@@ -52,103 +53,21 @@ var MYerandeome = Math.floor(Math.random() * 7000)+3000;
 window.setInterval("girmriri()", 155000+MYerandeom*21000+MYerandeome);
 var vlnble = 0;
 
-function vln (){
-	ttP = 22;
-	girmriri();
-}
 var pee = false;
-function eivmeim() {
-	if (vlnble == 1) {
-	ERcdvvdvd();
-	}
-}
 function girmriri(){
-	if (ttP <= 30) {
+	if (EOose < eSult) {
 		ndfmrkrlvki();
-	} else {
-		if (vlnble == 0) {
-		vlnble = 1;	
-		cleick(document.body.offsetWidth-196,30);
-		window.setInterval("eivmeim()", 15000);
-		}
 	}
 }
 cData = '';
 cO = true;
-/// R
-function ERcdvvdvd() {
-	cData = '';
-	if (cO == true) {
-		cleick(200, 555);
-		cO = false;
-	} else if (cO == false) {
-		cleick(400, 300);
-		cO = true;
-	} 
-	var edme = Math.floor(Math.random() * 5000)+1;
-	setTimeout(function(){ 
-	var rkcjnv = Math.floor(Math.random() * 4)+1;
-	var nne = '';
-	var data = 0;
-	if (rkcjnv  == 2) {
-		nne = 'Bullish';data = 666;
-	}
-	if (rkcjnv  == 1) {
-		nne = 'Neutral';data = 777;
-	}
-	if (rkcjnv  == 4) {
-		nne = 'Bearish';data = 888;
-	}
-	if (rkcjnv  == 3) {
-		nne = 'Unrelated';data = 1050;
-	}
-	mCh = true;
-	for (let i = 200 ; i <= 850; i+=7){
-		var e = document.elementFromPoint(data , i).innerText;	
-		cData += e.toLowerCase();
-		if (e == nne) {
-			setTimeout(function(){
-				if (e== nne) {
-					for (let arel = 0; arel <= ARK.length; arel+=1){
-						if (cData.indexOf(ARK[arel]) > -1) {
-							console.log('HM');
-							mCh = false;
-						} 
-					}
-					if (mCh == true) {
-						var trl = false;
-						if (data == 1050 && document.elementFromPoint(888, i).innerText == 'Bearish') {
-							trl = true;
-						}
-						if (data == 888 && document.elementFromPoint(1050, i).innerText == 'Unrelated') {
-							trl = true;
-						}
-						if (data == 777 && document.elementFromPoint(666, i).innerText == 'Bullish') {
-							trl = true;
-						}
-						if (data == 666 && document.elementFromPoint(777, i).innerText == 'Neutral') {
-							trl = true;
-						}
-						if (trl == true) {
-							cleick(data, i);
-							checkP();
-						}
-					}
-				}
-			},3000);
-			break;
-		}
-	}
-	console.log(teet);
-	}, 11000+edme);
-}
 /// P
 function ndfmrkrlvki() {
 	cData ='';
 	var RIOVrndoek = Math.floor(Math.random() * 5) + 0;
 	for (let i = 1000 ; i >= 800; i-=7){
 		var e = document.elementFromPoint(i , 152).innerHTML;	
-		if (e == '') {
+		if (e == '' && EOose < eSult) {
 			cleick(i , 152);
 			break;
 		}
@@ -185,7 +104,7 @@ function ndfmrkrlvki() {
 							mCh = false;
 						} 
 					}
-					if (mCh == true) {
+					if (mCh == true && EOose < eSult) {
 						cleick(data, ie);
 						checkP();
 					}
