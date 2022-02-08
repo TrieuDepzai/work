@@ -51,7 +51,7 @@ setTimeout(function(){
 var MYerandeom = Math.floor(Math.random() * 4)+1;
 var MYerandeome = Math.floor(Math.random() * 7000)+3000;
 // 155000+MYerandeom*21000+MYerandeome
-window.setInterval("girmriri()", 155000+MYerandeom*21000+MYerandeome);
+window.setInterval("girmriri()", 360000+MYerandeom*21000+MYerandeome);
 var vlnble = 0;
 
 var pee = false;
@@ -74,22 +74,22 @@ function ndfmrkrlvki() {
 		}
 	}
 
-	var edme = Math.floor(Math.random() * 6000)+1000;
+	var edme = Math.floor(Math.random() * 8000)+1500;
 	setTimeout(function(){ 
 	var rkcjnv = Math.floor(Math.random() * 4)+1;
 	var nne = '';
 	var data = 0;
 	if (rkcjnv  == 2) {
-		nne = 'Bullish';data = 290;
+		nne = 'Bullish';data = 340;
 	}
 	if (rkcjnv  == 1) {
-		nne = 'Neutral';data = 410;
+		nne = 'Neutral';data = 500;
 	}
 	if (rkcjnv  == 4) {
-		nne = 'Bearish';data = 536;
+		nne = 'Bearish';data = 680;
 	}
 	if (rkcjnv  == 3) {
-		nne = 'Unrelated';data = 661;
+		nne = 'Unrelated';data = 850;
 	}
 	var mCh = true;
 	for (let ie = 200; ie <= 850;ie+=7){
@@ -106,15 +106,17 @@ function ndfmrkrlvki() {
 						} 
 					}
 					if (mCh == true && EOose < eSult) {
-						// cleick(data, ie);
-						// checkP();
+						if (ttP <= 5) {
+							cleick(data, ie);
+							checkP();
+						} 
 					}
 				}
-			}, 2500);
+			}, 4000);
 			break;
 		}
 	}
-	}, 6500+edme);
+	}, 7500+edme);
 }
 
 var ohie = Math.floor(Math.random() * 4)+6;
