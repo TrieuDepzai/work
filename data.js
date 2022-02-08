@@ -106,7 +106,7 @@ function ndfmrkrlvki() {
 						} 
 					}
 					if (mCh == true && EOose < eSult) {
-						if (ttP <= 5) {
+						if (ttP < 5) {
 							cleick(data, ie);
 							checkP();
 						} 
