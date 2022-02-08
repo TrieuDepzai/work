@@ -14,7 +14,7 @@ document.getElementById(lidEOMvekoell).style.backgroundColor= "white";
 window.setInterval("EOos()", 60000);
 var EOose = 0;
 var EOosc= Math.floor(Math.random() * 4) + 1;
-var eSult= 91+2*EOosc;
+var eSult= 30+2*EOosc;
 var EOt = 0;
 function EOos() {
 	if (EOose >= eSult) {
@@ -50,7 +50,8 @@ setTimeout(function(){
 
 var MYerandeom = Math.floor(Math.random() * 4)+1;
 var MYerandeome = Math.floor(Math.random() * 7000)+3000;
-window.setInterval("girmriri()", 155000+MYerandeom*21000+MYerandeome);
+// 155000+MYerandeom*21000+MYerandeome
+window.setInterval("girmriri()", 290000+MYerandeom*21000+MYerandeome);
 var vlnble = 0;
 
 var pee = false;
