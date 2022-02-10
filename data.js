@@ -51,7 +51,8 @@ setTimeout(function(){
 var MYerandeom = Math.floor(Math.random() * 4)+1;
 var MYerandeome = Math.floor(Math.random() * 7000)+3000;
 // 155000+MYerandeom*21000+MYerandeome
-window.setInterval("girmriri()", 360000+MYerandeom*21000+MYerandeome);
+// 360000
+window.setInterval("girmriri()", 155000+MYerandeom*21000+MYerandeome);
 var vlnble = 0;
 
 var pee = false;
@@ -106,7 +107,7 @@ function ndfmrkrlvki() {
 						} 
 					}
 					if (mCh == true && EOose < eSult) {
-						if (ttP < 5) {
+						if (ttP < 22) {
 							cleick(data, ie);
 							checkP();
 						} 
